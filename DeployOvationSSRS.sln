@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DeployOvationSSRS", "DeployOvationSSRS\DeployOvationSSRS.rptproj", "{56A02D7D-0569-4415-BC80-A108AC18BFCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Debug|Default.ActiveCfg = Debug
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Debug|Default.Build.0 = Debug
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Debug|Default.Deploy.0 = Debug
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.DebugLocal|Default.Build.0 = DebugLocal
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Release|Default.ActiveCfg = Release
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Release|Default.Build.0 = Release
+		{56A02D7D-0569-4415-BC80-A108AC18BFCF}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
