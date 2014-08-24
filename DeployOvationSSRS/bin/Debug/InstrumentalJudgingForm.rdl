@@ -2000,7 +2000,7 @@
     <DataSource Name="DataSource1">
       <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
+      <rd:DataSourceID>00984dc3-ff4c-47e7-a9e3-a3f5bdb55c34</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -2010,6 +2010,14 @@
         <QueryParameters>
           <QueryParameter Name="@auditionOrgId">
             <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@teacherId">
+            <Value>=Parameters!teacherId.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+          <QueryParameter Name="@districtId">
+            <Value>=Parameters!districtId.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
@@ -2076,6 +2084,14 @@
     <ReportParameter Name="auditionOrgId">
       <DataType>Integer</DataType>
       <Prompt>audition Org Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="teacherId">
+      <DataType>String</DataType>
+      <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="districtId">
+      <DataType>String</DataType>
+      <Prompt>district Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
