@@ -1,86 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
-  <DataSources>
-    <DataSource Name="DataSource1">
-      <DataSourceReference>/WisconsinMusicConnection</DataSourceReference>
-      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet1">
-      <Fields>
-        <Field Name="Teacher_Id">
-          <DataField>Teacher_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Student_Id">
-          <DataField>Student_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Student_Name">
-          <DataField>Student_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Instrument">
-          <DataField>Instrument</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Grade">
-          <DataField>Grade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Type">
-          <DataField>Audition_Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Start_Time">
-          <DataField>Start_Time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Track">
-          <DataField>Audition_Track</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Composition">
-          <DataField>Composition</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Composer">
-          <DataField>Composer</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Style">
-          <DataField>Style</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Judge_Name">
-          <DataField>Judge_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Room">
-          <DataField>Room</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_JudgeKeyboardForms</CommandText>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@teacherId">
-            <Value>=Parameters!teacherId.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@districtId">
-            <Value>=Parameters!districtId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-    </DataSet>
-  </DataSets>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
       <Tablix Name="Tablix2">
@@ -2706,6 +2625,96 @@
       </Border>
     </Style>
   </Body>
+  <Width>7.98958in</Width>
+  <Page>
+    <PageHeight>27.94cm</PageHeight>
+    <PageWidth>21.59cm</PageWidth>
+    <LeftMargin>0.635cm</LeftMargin>
+    <RightMargin>0.635cm</RightMargin>
+    <TopMargin>0.635cm</TopMargin>
+    <BottomMargin>0.635cm</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>/WisconsinMusicConnection</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@teacherId">
+            <Value>=Parameters!teacherId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_JudgeKeyboardForms</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="Teacher_Id">
+          <DataField>Teacher_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Student_Id">
+          <DataField>Student_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Student_Name">
+          <DataField>Student_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Instrument">
+          <DataField>Instrument</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Grade">
+          <DataField>Grade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Type">
+          <DataField>Audition_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Start_Time">
+          <DataField>Start_Time</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Track">
+          <DataField>Audition_Track</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Composition">
+          <DataField>Composition</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Composer">
+          <DataField>Composer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Style">
+          <DataField>Style</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Judge_Name">
+          <DataField>Judge_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Room">
+          <DataField>Room</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
   <ReportParameters>
     <ReportParameter Name="auditionOrgId">
       <DataType>Integer</DataType>
@@ -2720,17 +2729,7 @@
       <Prompt>district Id</Prompt>
     </ReportParameter>
   </ReportParameters>
-  <Width>7.98958in</Width>
-  <Page>
-    <PageHeight>27.94cm</PageHeight>
-    <PageWidth>21.59cm</PageWidth>
-    <LeftMargin>0.635cm</LeftMargin>
-    <RightMargin>0.635cm</RightMargin>
-    <TopMargin>0.635cm</TopMargin>
-    <BottomMargin>0.635cm</BottomMargin>
-    <Style />
-  </Page>
-  <rd:ReportID>37d85ff3-2fac-4345-b7ff-b6e9db9ed584</rd:ReportID>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
+  <rd:ReportID>37d85ff3-2fac-4345-b7ff-b6e9db9ed584</rd:ReportID>
 </Report>

@@ -1350,10 +1350,6 @@
           <QueryParameter Name="@auditionOrgId">
             <Value>=Parameters!auditionOrgId.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@districtId">
-            <Value>=Parameters!districtId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>sp_Reports_AuditionJudgeResults</CommandText>
