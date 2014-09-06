@@ -1396,10 +1396,6 @@
       <DataType>Integer</DataType>
       <Prompt>audition Org Id</Prompt>
     </ReportParameter>
-    <ReportParameter Name="districtId">
-      <DataType>String</DataType>
-      <Prompt>district Id</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>

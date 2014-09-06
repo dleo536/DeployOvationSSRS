@@ -2578,6 +2578,14 @@
             <Value>=Parameters!teacherId.Value</Value>
             <rd:UserDefined>true</rd:UserDefined>
           </QueryParameter>
+          <QueryParameter Name="@studentId">
+            <Value>=Parameters!studentId.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+          <QueryParameter Name="@year">
+            <Value>=Parameters!year.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>sp_Reports_StudentResults</CommandText>
@@ -2667,6 +2675,14 @@
     <ReportParameter Name="teacherId">
       <DataType>String</DataType>
       <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="studentId">
+      <DataType>String</DataType>
+      <Prompt>student Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="year">
+      <DataType>String</DataType>
+      <Prompt>year</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

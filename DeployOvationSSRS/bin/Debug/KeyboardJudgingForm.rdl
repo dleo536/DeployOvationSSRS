@@ -2724,10 +2724,6 @@
       <DataType>Integer</DataType>
       <Prompt>teacher Id</Prompt>
     </ReportParameter>
-    <ReportParameter Name="districtId">
-      <DataType>Integer</DataType>
-      <Prompt>district Id</Prompt>
-    </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
