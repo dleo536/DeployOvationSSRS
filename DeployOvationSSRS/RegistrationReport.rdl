@@ -1,117 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
-  <DataSources>
-    <DataSource Name="DataSource1">
-      <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
-      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
-      <rd:SecurityType>None</rd:SecurityType>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet1">
-      <Fields>
-        <Field Name="Audition_Org_Id">
-          <DataField>Audition_Org_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Student_Id">
-          <DataField>Student_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Id">
-          <DataField>Audition_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Student">
-          <DataField>Student</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Grade">
-          <DataField>Grade</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Type">
-          <DataField>Audition_Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Year">
-          <DataField>Year</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Year_Id">
-          <DataField>Year_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Track">
-          <DataField>Audition_Track</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Theory_Level">
-          <DataField>Theory_Level</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Composer">
-          <DataField>Composer</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Teacher">
-          <DataField>Teacher</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Style">
-          <DataField>Style</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Composition_Name">
-          <DataField>Composition_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Points">
-          <DataField>Points</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Audition_District_Name">
-          <DataField>Audition_District_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Start_Time">
-          <DataField>Audition_Start_Time</DataField>
-          <rd:TypeName>System.TimeSpan</rd:TypeName>
-        </Field>
-        <Field Name="Theory_Room">
-          <DataField>Theory_Room</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Room">
-          <DataField>Audition_Room</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Coord_Ride_Name">
-          <DataField>Coord_Ride_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Coord_Type">
-          <DataField>Coord_Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource1</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_Registration</CommandText>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@teacherId">
-            <Value>=Parameters!teacherId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
-          </QueryParameter>
-        </QueryParameters>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-    </DataSet>
-  </DataSets>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
       <Tablix Name="Tablix2">
@@ -3696,7 +3584,7 @@
         <FixedRowHeaders>true</FixedRowHeaders>
         <DataSetName>DataSet1</DataSetName>
         <Height>2.12576in</Height>
-        <Width>7.49905in</Width>
+        <Width>7.49906in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -3711,17 +3599,7 @@
       </Border>
     </Style>
   </Body>
-  <ReportParameters>
-    <ReportParameter Name="auditionOrgId">
-      <DataType>Integer</DataType>
-      <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="teacherId">
-      <DataType>String</DataType>
-      <Prompt>teacher Id</Prompt>
-    </ReportParameter>
-  </ReportParameters>
-  <Width>7.49905in</Width>
+  <Width>7.49906in</Width>
   <Page>
     <PageHeight>27.94cm</PageHeight>
     <PageWidth>21.59cm</PageWidth>
@@ -3733,7 +3611,130 @@
     <BottomMargin>0.254cm</BottomMargin>
     <Style />
   </Page>
-  <rd:ReportID>37d85ff3-2fac-4345-b7ff-b6e9db9ed584</rd:ReportID>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>WisconsinMusicTestConnection</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@teacherId">
+            <Value>=Parameters!teacherId.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_Registration</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="Audition_Org_Id">
+          <DataField>Audition_Org_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Student_Id">
+          <DataField>Student_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Id">
+          <DataField>Audition_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Student">
+          <DataField>Student</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Grade">
+          <DataField>Grade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Type">
+          <DataField>Audition_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year_Id">
+          <DataField>Year_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Track">
+          <DataField>Audition_Track</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Theory_Level">
+          <DataField>Theory_Level</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Composer">
+          <DataField>Composer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Teacher">
+          <DataField>Teacher</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Style">
+          <DataField>Style</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Composition_Name">
+          <DataField>Composition_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Points">
+          <DataField>Points</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Audition_District_Name">
+          <DataField>Audition_District_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Start_Time">
+          <DataField>Audition_Start_Time</DataField>
+          <rd:TypeName>System.TimeSpan</rd:TypeName>
+        </Field>
+        <Field Name="Theory_Room">
+          <DataField>Theory_Room</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Room">
+          <DataField>Audition_Room</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Coord_Ride_Name">
+          <DataField>Coord_Ride_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Coord_Type">
+          <DataField>Coord_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="auditionOrgId">
+      <DataType>Integer</DataType>
+      <Prompt>audition Org Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="teacherId">
+      <DataType>String</DataType>
+      <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
+  <rd:ReportID>37d85ff3-2fac-4345-b7ff-b6e9db9ed584</rd:ReportID>
 </Report>

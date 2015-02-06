@@ -1,5 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <DataSourceReference>WisconsinMusicTestConnection</DataSourceReference>
+      <rd:DataSourceID>48ba90fe-d6bd-41b7-8905-8f9bfc6ff8ba</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet">
+      <Fields>
+        <Field Name="AuditionOrgId">
+          <DataField>AuditionOrgId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="District_Name">
+          <DataField>District_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Student_Id">
+          <DataField>Student_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Student_Last_Name">
+          <DataField>Student_Last_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Student_Frist_Name">
+          <DataField>Student_Frist_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Student_MI">
+          <DataField>Student_MI</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Id">
+          <DataField>Audition_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Type">
+          <DataField>Audition_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ID24_Hr_Time">
+          <DataField>24_Hr_Time</DataField>
+          <rd:TypeName>System.TimeSpan</rd:TypeName>
+        </Field>
+        <Field Name="Start_Time">
+          <DataField>Start_Time</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Length">
+          <DataField>Audition_Length</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Theory_Level">
+          <DataField>Theory_Level</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Room">
+          <DataField>Audition_Room</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Theory_Room">
+          <DataField>Theory_Room</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_RoomSchedule</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@teacherId">
+            <Value>=Parameters!teacherId.Value</Value>
+            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
   <Body>
     <ReportItems>
       <Tablix Name="Tablix2">
@@ -9,13 +97,16 @@
               <Width>0.6018in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.97917in</Width>
+              <Width>0.86459in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>0.75in</Width>
+              <Width>0.61598in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>0.67848in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>0.55069in</Width>
             </TablixColumn>
             <TablixColumn>
               <Width>2.11222in</Width>
@@ -145,6 +236,48 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox107</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>White</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -448,6 +581,53 @@
                         </Paragraph>
                       </Paragraphs>
                       <rd:DefaultName>Textbox109</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>White</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <BottomBorder>
+                          <Color>Black</Color>
+                          <Style>Solid</Style>
+                          <Width>2pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox2">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>ID</Value>
+                              <Style>
+                                <FontSize>11pt</FontSize>
+                                <FontWeight>Bold</FontWeight>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox2</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>White</Color>
@@ -811,6 +991,57 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
+                    <Textbox Name="Student_Id">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Student_Id.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Student_Id</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <TopBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </TopBorder>
+                        <BottomBorder>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                          <Width>1pt</Width>
+                        </BottomBorder>
+                        <LeftBorder>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                          <Width>1pt</Width>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
                     <Textbox Name="Student_Last_Name">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
@@ -951,6 +1182,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -1053,7 +1285,7 @@
         <Top>0.02778in</Top>
         <Left>0.00694in</Left>
         <Height>0.76042in</Height>
-        <Width>7.5in</Width>
+        <Width>7.48056in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1068,6 +1300,16 @@
       </Border>
     </Style>
   </Body>
+  <ReportParameters>
+    <ReportParameter Name="auditionOrgId">
+      <DataType>Integer</DataType>
+      <Prompt>audition Org Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="teacherId">
+      <DataType>String</DataType>
+      <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Width>7.50694in</Width>
   <Page>
     <PageHeader>
@@ -1241,110 +1483,7 @@
     <BottomMargin>0.762cm</BottomMargin>
     <Style />
   </Page>
-  <AutoRefresh>0</AutoRefresh>
-  <DataSources>
-    <DataSource Name="DataSource">
-      <DataSourceReference>WisconsinMusicTestConnection</DataSourceReference>
-      <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>48ba90fe-d6bd-41b7-8905-8f9bfc6ff8ba</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@teacherId">
-            <Value>=Parameters!teacherId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_RoomSchedule</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="AuditionOrgId">
-          <DataField>AuditionOrgId</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="District_Name">
-          <DataField>District_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Year">
-          <DataField>Year</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Student_Id">
-          <DataField>Student_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Student_Last_Name">
-          <DataField>Student_Last_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Student_Frist_Name">
-          <DataField>Student_Frist_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Student_MI">
-          <DataField>Student_MI</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Id">
-          <DataField>Audition_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Type">
-          <DataField>Audition_Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ID24_Hr_Time">
-          <DataField>24_Hr_Time</DataField>
-          <rd:TypeName>System.TimeSpan</rd:TypeName>
-        </Field>
-        <Field Name="Start_Time">
-          <DataField>Start_Time</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Length">
-          <DataField>Audition_Length</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Theory_Level">
-          <DataField>Theory_Level</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Room">
-          <DataField>Audition_Room</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Theory_Room">
-          <DataField>Theory_Room</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
-  <ReportParameters>
-    <ReportParameter Name="auditionOrgId">
-      <DataType>Integer</DataType>
-      <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="teacherId">
-      <DataType>String</DataType>
-      <Prompt>teacher Id</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="districtId">
-      <DataType>String</DataType>
-      <Prompt>district Id</Prompt>
-    </ReportParameter>
-  </ReportParameters>
+  <rd:ReportID>218b9cb4-dd8e-4658-8731-454b5e390d6c</rd:ReportID>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
-  <rd:ReportID>218b9cb4-dd8e-4658-8731-454b5e390d6c</rd:ReportID>
 </Report>

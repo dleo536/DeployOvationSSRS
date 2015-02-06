@@ -1,5 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <DataSourceReference>/WisconsinMusicConnection</DataSourceReference>
+      <rd:DataSourceID>129c8c7a-7d2c-47c0-8333-0260c9f27b1e</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet">
+      <Fields>
+        <Field Name="District">
+          <DataField>District</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Audition_Org_Id">
+          <DataField>Audition_Org_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Chair">
+          <DataField>Chair</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Instrument">
+          <DataField>Instrument</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Track">
+          <DataField>Track</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Type">
+          <DataField>Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CountOfStudents">
+          <DataField>CountOfStudents</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Num_Badger_Qualifiers">
+          <DataField>Num_Badger_Qualifiers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Num_InDistrict_Teachers">
+          <DataField>Num_InDistrict_Teachers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Num_OutDistrict_Teachers">
+          <DataField>Num_OutDistrict_Teachers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_DistrictSummary</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="DataSetAwards">
+      <Fields>
+        <Field Name="Num_Awards">
+          <DataField>Num_Awards</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Award_Description">
+          <DataField>Award_Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Award_Type">
+          <DataField>Award_Type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sort">
+          <DataField>Sort</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_DistrictSummary_Awards</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
   <Body>
     <ReportItems>
       <Tablix Name="Tablix3">
@@ -1581,7 +1680,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Sum(Fields!Num_OutDistrict_Teachers.Value, "DataSet")</Value>
+                <Value>=first(Fields!Num_OutDistrict_Teachers.Value, "DataSet")</Value>
                 <Style>
                   <FontWeight>Normal</FontWeight>
                 </Style>
@@ -1719,6 +1818,12 @@
       </Border>
     </Style>
   </Body>
+  <ReportParameters>
+    <ReportParameter Name="auditionOrgId">
+      <DataType>Integer</DataType>
+      <Prompt>audition Org Id</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Width>10.49417in</Width>
   <Page>
     <PageFooter>
@@ -1772,113 +1877,7 @@
     <BottomMargin>0.254cm</BottomMargin>
     <Style />
   </Page>
-  <AutoRefresh>0</AutoRefresh>
-  <DataSources>
-    <DataSource Name="DataSource">
-      <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
-      <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>129c8c7a-7d2c-47c0-8333-0260c9f27b1e</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_DistrictSummary</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="District">
-          <DataField>District</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Year">
-          <DataField>Year</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Audition_Org_Id">
-          <DataField>Audition_Org_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Chair">
-          <DataField>Chair</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Instrument">
-          <DataField>Instrument</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Track">
-          <DataField>Track</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Type">
-          <DataField>Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CountOfStudents">
-          <DataField>CountOfStudents</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Num_Badger_Qualifiers">
-          <DataField>Num_Badger_Qualifiers</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Num_InDistrict_Teachers">
-          <DataField>Num_InDistrict_Teachers</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Num_OutDistrict_Teachers">
-          <DataField>Num_OutDistrict_Teachers</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DataSetAwards">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_DistrictSummary_Awards</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="Num_Awards">
-          <DataField>Num_Awards</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Award_Description">
-          <DataField>Award_Description</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Award_Type">
-          <DataField>Award_Type</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Sort">
-          <DataField>Sort</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
-  <ReportParameters>
-    <ReportParameter Name="auditionOrgId">
-      <DataType>Integer</DataType>
-      <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
-  </ReportParameters>
+  <rd:ReportID>30af500e-086d-43e6-91cb-8b345374a2cc</rd:ReportID>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
-  <rd:ReportID>30af500e-086d-43e6-91cb-8b345374a2cc</rd:ReportID>
 </Report>

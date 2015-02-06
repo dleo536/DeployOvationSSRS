@@ -1581,7 +1581,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>=Sum(Fields!Num_OutDistrict_Teachers.Value, "DataSet")</Value>
+                <Value>=first(Fields!Num_OutDistrict_Teachers.Value, "DataSet")</Value>
                 <Style>
                   <FontWeight>Normal</FontWeight>
                 </Style>
