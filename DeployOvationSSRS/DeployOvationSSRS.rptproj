@@ -42,24 +42,48 @@
       <FullPath>BadgerKeyboardExecutiveSummary.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>BadgerKeyboardExecutiveSummaryTest.rdl</Name>
+      <FullPath>BadgerKeyboardExecutiveSummaryTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BadgerKeyboardResults.rdl</Name>
       <FullPath>BadgerKeyboardResults.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerKeyboardResultsTest.rdl</Name>
+      <FullPath>BadgerKeyboardResultsTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>BadgerKeyboardSiteResults.rdl</Name>
       <FullPath>BadgerKeyboardSiteResults.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>BadgerKeyboardSiteResultsTest.rdl</Name>
+      <FullPath>BadgerKeyboardSiteResultsTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BadgerKeyboardTeacherFees.rdl</Name>
       <FullPath>BadgerKeyboardTeacherFees.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerKeyboardTeacherFeesTest.rdl</Name>
+      <FullPath>BadgerKeyboardTeacherFeesTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>BadgerNonKeyboardTeacherFees.rdl</Name>
       <FullPath>BadgerNonKeyboardTeacherFees.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>BadgerNonKeyboardTeacherFeesTest.rdl</Name>
+      <FullPath>BadgerNonKeyboardTeacherFeesTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BadgerVocalInstrumentalExecutiveSummary.rdl</Name>
       <FullPath>BadgerVocalInstrumentalExecutiveSummary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerVocalInstrumentalExecutiveSummaryTest.rdl</Name>
+      <FullPath>BadgerVocalInstrumentalExecutiveSummaryTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictAuditionJudgesReport.rdl</Name>
@@ -74,6 +98,10 @@
       <FullPath>DistrictAuditionsExecutiveSummary.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DistrictAuditionsExecutiveSummaryTest.rdl</Name>
+      <FullPath>DistrictAuditionsExecutiveSummaryTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DistrictAuditionStatistics.rdl</Name>
       <FullPath>DistrictAuditionStatistics.rdl</FullPath>
     </ProjectItem>
@@ -84,6 +112,10 @@
     <ProjectItem>
       <Name>DistrictChairSummaryReport.rdl</Name>
       <FullPath>DistrictChairSummaryReport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictChairSummaryReportTest.rdl</Name>
+      <FullPath>DistrictChairSummaryReportTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictStudentResults.rdl</Name>
@@ -122,6 +154,10 @@
       <FullPath>DistrictTeacherSummary.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DistrictTeacherSummaryTest.rdl</Name>
+      <FullPath>DistrictTeacherSummaryTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>InstrumentalJudgingForm.rdl</Name>
       <FullPath>InstrumentalJudgingForm.rdl</FullPath>
     </ProjectItem>
@@ -150,12 +186,12 @@
       <FullPath>RegistrationReport.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>RegistrationReport_V2.rdl</Name>
-      <FullPath>RegistrationReport_V2.rdl</FullPath>
+      <Name>RegistrationReport_V2 v2 is actually v3.rdl</Name>
+      <FullPath>RegistrationReport_V2 v2 is actually v3.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>RegistrationReport_V2Test.rdl</Name>
-      <FullPath>RegistrationReport_V2Test.rdl</FullPath>
+      <Name>RegistrationReport_V2 v2 is actually v3Test.rdl</Name>
+      <FullPath>RegistrationReport_V2 v2 is actually v3Test.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>RegistrationReportCoord.rdl</Name>
@@ -164,6 +200,10 @@
     <ProjectItem>
       <Name>RegistrationReportCoordTest.rdl</Name>
       <FullPath>RegistrationReportCoordTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RegistrationReportTest.rdl</Name>
+      <FullPath>RegistrationReportTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>StringsJudgingForm.rdl</Name>
@@ -550,44 +590,12 @@
       <FullPath>VocalJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DistrictChairSummaryReportTest.rdl</Name>
-      <FullPath>DistrictChairSummaryReportTest.rdl</FullPath>
+      <Name>RegistrationReport_V2.rdl</Name>
+      <FullPath>RegistrationReport_V2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>RegistrationReportTest.rdl</Name>
-      <FullPath>RegistrationReportTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DistrictTeacherSummaryTest.rdl</Name>
-      <FullPath>DistrictTeacherSummaryTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerKeyboardExecutiveSummaryTest.rdl</Name>
-      <FullPath>BadgerKeyboardExecutiveSummaryTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerKeyboardResultsTest.rdl</Name>
-      <FullPath>BadgerKeyboardResultsTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerKeyboardSiteResultsTest.rdl</Name>
-      <FullPath>BadgerKeyboardSiteResultsTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerKeyboardTeacherFeesTest.rdl</Name>
-      <FullPath>BadgerKeyboardTeacherFeesTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerNonKeyboardTeacherFeesTest.rdl</Name>
-      <FullPath>BadgerNonKeyboardTeacherFeesTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>BadgerVocalInstrumentalExecutiveSummaryTest.rdl</Name>
-      <FullPath>BadgerVocalInstrumentalExecutiveSummaryTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DistrictAuditionsExecutiveSummaryTest.rdl</Name>
-      <FullPath>DistrictAuditionsExecutiveSummaryTest.rdl</FullPath>
+      <Name>RegistrationReport_V2Test.rdl</Name>
+      <FullPath>RegistrationReport_V2Test.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

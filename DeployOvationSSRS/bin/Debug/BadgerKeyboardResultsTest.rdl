@@ -765,7 +765,7 @@
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
-      <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
+      <DataSourceReference>WisconsinMusicTestConnection</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>0adba91e-0489-40f4-9896-e93931a20b14</rd:DataSourceID>
     </DataSource>

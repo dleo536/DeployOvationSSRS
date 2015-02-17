@@ -4025,7 +4025,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_Registration</CommandText>
+        <CommandText>sp_Reports_Registration_Combined</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -4111,6 +4111,14 @@
         </Field>
         <Field Name="Instrument">
           <DataField>Instrument</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Coord_Name">
+          <DataField>Coord_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Coord_Type">
+          <DataField>Coord_Type</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>

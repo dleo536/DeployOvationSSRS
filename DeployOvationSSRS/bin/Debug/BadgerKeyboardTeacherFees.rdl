@@ -1,69 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
-  <DataSources>
-    <DataSource Name="DataSource">
-      <DataSourceReference>/WisconsinMusicConnection</DataSourceReference>
-      <rd:DataSourceID>11420997-9f87-48eb-8a5d-0d21c7757ca2</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet1">
-      <Fields>
-        <Field Name="Teacher_Id">
-          <DataField>Teacher_Id</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Teacher_Name">
-          <DataField>Teacher_Name</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Region">
-          <DataField>Region</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Instrument">
-          <DataField>Instrument</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Track">
-          <DataField>Track</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Num_Solo_Auditions">
-          <DataField>Num_Solo_Auditions</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Total_Solo_Due">
-          <DataField>Total_Solo_Due</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-        <Field Name="Num_Duet_Auditions">
-          <DataField>Num_Duet_Auditions</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Total_Duet_Due">
-          <DataField>Total_Duet_Due</DataField>
-          <rd:TypeName>System.Decimal</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_BadgerTeacherFee</CommandText>
-        <QueryParameters>
-          <QueryParameter Name="@year">
-            <Value>=Parameters!year.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@contactId">
-            <Value>=Parameters!contactId.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@type">
-            <Value>=Parameters!type.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-      </Query>
-    </DataSet>
-  </DataSets>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <Body>
     <ReportItems>
       <Tablix Name="Tablix1">
@@ -1613,20 +1549,6 @@
       </Border>
     </Style>
   </Body>
-  <ReportParameters>
-    <ReportParameter Name="year">
-      <DataType>String</DataType>
-      <Prompt>year</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="contactId">
-      <DataType>Integer</DataType>
-      <Prompt>contactId</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="type">
-      <DataType>String</DataType>
-      <Prompt>type</Prompt>
-    </ReportParameter>
-  </ReportParameters>
   <Width>7.58958in</Width>
   <Page>
     <PageHeader>
@@ -1730,7 +1652,87 @@
     <BottomMargin>0.254cm</BottomMargin>
     <Style />
   </Page>
-  <rd:ReportID>f2c0d131-b9d2-40b3-b11d-3577f1a16d53</rd:ReportID>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>11420997-9f87-48eb-8a5d-0d21c7757ca2</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@year">
+            <Value>=Parameters!year.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@contactId">
+            <Value>=Parameters!contactId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@type">
+            <Value>=Parameters!type.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_BadgerTeacherFee</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Teacher_Id">
+          <DataField>Teacher_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Teacher_Name">
+          <DataField>Teacher_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Region">
+          <DataField>Region</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Instrument">
+          <DataField>Instrument</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Track">
+          <DataField>Track</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Num_Solo_Auditions">
+          <DataField>Num_Solo_Auditions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Total_Solo_Due">
+          <DataField>Total_Solo_Due</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Num_Duet_Auditions">
+          <DataField>Num_Duet_Auditions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Total_Duet_Due">
+          <DataField>Total_Duet_Due</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="year">
+      <DataType>String</DataType>
+      <Prompt>year</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="contactId">
+      <DataType>Integer</DataType>
+      <Prompt>contactId</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="type">
+      <DataType>String</DataType>
+      <Prompt>type</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
+  <rd:ReportID>f2c0d131-b9d2-40b3-b11d-3577f1a16d53</rd:ReportID>
 </Report>
