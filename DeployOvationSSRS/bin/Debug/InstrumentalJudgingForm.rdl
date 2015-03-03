@@ -1602,7 +1602,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Judge's Name</Value>
+                                      <Value>Judge</Value>
                                       <Style>
                                         <FontSize>11pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -1736,7 +1736,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Judge_Name.Value</Value>
+                                      <Value>=Fields!JudgeId.Value</Value>
                                       <Style>
                                         <FontStyle>Italic</FontStyle>
                                         <FontSize>12pt</FontSize>
@@ -1968,6 +1968,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
         <Top>0.1425in</Top>
         <Height>10.36792in</Height>
         <Width>7.84375in</Width>
@@ -2000,7 +2001,7 @@
     <DataSource Name="DataSource1">
       <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
       <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>00984dc3-ff4c-47e7-a9e3-a3f5bdb55c34</rd:DataSourceID>
+      <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -2013,7 +2014,9 @@
           </QueryParameter>
           <QueryParameter Name="@teacherId">
             <Value>=Parameters!teacherId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
+          </QueryParameter>
+          <QueryParameter Name="@districtId">
+            <Value>=Parameters!districtId.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
@@ -2073,6 +2076,10 @@
           <DataField>Room</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="JudgeId">
+          <DataField>JudgeId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -2082,8 +2089,12 @@
       <Prompt>audition Org Id</Prompt>
     </ReportParameter>
     <ReportParameter Name="teacherId">
-      <DataType>String</DataType>
+      <DataType>Integer</DataType>
       <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="districtId">
+      <DataType>Integer</DataType>
+      <Prompt>district Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

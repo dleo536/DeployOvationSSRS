@@ -162,16 +162,8 @@
       <FullPath>InstrumentalJudgingForm.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>InstrumentalJudgingFormTest.rdl</Name>
-      <FullPath>InstrumentalJudgingFormTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>KeyboardJudgingForm.rdl</Name>
       <FullPath>KeyboardJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>KeyboardJudgingFormTest.rdl</Name>
-      <FullPath>KeyboardJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>OutOfDistrictStudentResults.rdl</Name>
@@ -194,6 +186,14 @@
       <FullPath>RegistrationReport_V2 v2 is actually v3Test.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>RegistrationReport_V2.rdl</Name>
+      <FullPath>RegistrationReport_V2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>RegistrationReport_V2Test.rdl</Name>
+      <FullPath>RegistrationReport_V2Test.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>RegistrationReportCoord.rdl</Name>
       <FullPath>RegistrationReportCoord.rdl</FullPath>
     </ProjectItem>
@@ -208,10 +208,6 @@
     <ProjectItem>
       <Name>StringsJudgingForm.rdl</Name>
       <FullPath>StringsJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>StringsJudgingFormTest.rdl</Name>
-      <FullPath>StringsJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>StudentHistory.rdl</Name>
@@ -590,12 +586,16 @@
       <FullPath>VocalJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>RegistrationReport_V2.rdl</Name>
-      <FullPath>RegistrationReport_V2.rdl</FullPath>
+      <Name>StringsJudgingFormTest.rdl</Name>
+      <FullPath>StringsJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>RegistrationReport_V2Test.rdl</Name>
-      <FullPath>RegistrationReport_V2Test.rdl</FullPath>
+      <Name>KeyboardJudgingFormTest.rdl</Name>
+      <FullPath>KeyboardJudgingFormTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>InstrumentalJudgingFormTest.rdl</Name>
+      <FullPath>InstrumentalJudgingFormTest.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

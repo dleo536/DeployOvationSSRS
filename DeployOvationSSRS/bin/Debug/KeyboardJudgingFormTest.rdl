@@ -2242,7 +2242,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Judge's Name</Value>
+                                      <Value>Judge</Value>
                                       <Style>
                                         <FontSize>11pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -2376,7 +2376,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>=Fields!Judge_Name.Value</Value>
+                                      <Value>=Fields!JudgeId.Value</Value>
                                       <Style>
                                         <FontStyle>Italic</FontStyle>
                                         <FontSize>12pt</FontSize>
@@ -2654,6 +2654,9 @@
           <QueryParameter Name="@teacherId">
             <Value>=Parameters!teacherId.Value</Value>
           </QueryParameter>
+          <QueryParameter Name="@districtId">
+            <Value>=Parameters!districtId.Value</Value>
+          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>sp_Reports_JudgeKeyboardForms</CommandText>
@@ -2712,6 +2715,10 @@
           <DataField>Room</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="JudgeId">
+          <DataField>JudgeId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
       </Fields>
     </DataSet>
   </DataSets>
@@ -2723,6 +2730,10 @@
     <ReportParameter Name="teacherId">
       <DataType>Integer</DataType>
       <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="districtId">
+      <DataType>Integer</DataType>
+      <Prompt>district Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

@@ -1557,10 +1557,6 @@
           <QueryParameter Name="@auditionOrgId">
             <Value>=Parameters!auditionOrgId.Value</Value>
           </QueryParameter>
-          <QueryParameter Name="@teacherId">
-            <Value>=Parameters!teacherId.Value</Value>
-            <rd:UserDefined>true</rd:UserDefined>
-          </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
         <CommandText>sp_Reports_JudgeSchedule</CommandText>
@@ -1630,10 +1626,6 @@
     <ReportParameter Name="auditionOrgId">
       <DataType>Integer</DataType>
       <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
-    <ReportParameter Name="teacherId">
-      <DataType>String</DataType>
-      <Prompt>teacher Id</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
