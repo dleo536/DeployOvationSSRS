@@ -59,7 +59,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>VOCAL</Value>
+                                  <Value>PIANO</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -75,7 +75,7 @@
                           <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
                           <rd:DefaultName>ReportTitle</rd:DefaultName>
                           <Top>0.28437in</Top>
-                          <Left>0.15896in</Left>
+                          <Left>0.15in</Left>
                           <Height>0.28542in</Height>
                           <Width>5.54167in</Width>
                           <ZIndex>1</ZIndex>
@@ -983,7 +983,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>VOCAL</Value>
+                                  <Value>TECHNIQUE</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -1028,7 +1028,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>pitch accuracy</Value>
+                                  <Value>hand/body position</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1071,7 +1071,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>rhythmic accuracy</Value>
+                                  <Value>pedal technique</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1114,7 +1114,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>tempo/continuity</Value>
+                                  <Value>legato/staccato</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1157,7 +1157,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>tone quality</Value>
+                                  <Value>phrasing</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1200,7 +1200,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>technique/breath control</Value>
+                                  <Value>fingering</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1211,8 +1211,40 @@
                           <Top>4.49868in</Top>
                           <Left>0.37586in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.69353in</Width>
+                          <Width>1.45395in</Width>
                           <ZIndex>37</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox52">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>ACCURACY</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>4.79035in</Top>
+                          <Left>0.11336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.26645in</Width>
+                          <ZIndex>38</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1225,11 +1257,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle10">
                           <KeepTogether>true</KeepTogether>
-                          <Top>4.79035in</Top>
+                          <Top>4.9966in</Top>
                           <Left>0.11003in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>38</ZIndex>
+                          <ZIndex>39</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1243,7 +1275,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>phrasing/diction</Value>
+                                  <Value>notes</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1251,11 +1283,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>4.79035in</Top>
+                          <Top>4.9966in</Top>
                           <Left>0.37253in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>39</ZIndex>
+                          <ZIndex>40</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1268,11 +1300,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle11">
                           <KeepTogether>true</KeepTogether>
-                          <Top>5.08202in</Top>
+                          <Top>5.28827in</Top>
                           <Left>0.11003in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>40</ZIndex>
+                          <ZIndex>41</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1286,7 +1318,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>dynamic control</Value>
+                                  <Value>rests</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1294,11 +1326,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.08202in</Top>
+                          <Top>5.28827in</Top>
                           <Left>0.37253in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>41</ZIndex>
+                          <ZIndex>42</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1311,11 +1343,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle12">
                           <KeepTogether>true</KeepTogether>
-                          <Top>5.37369in</Top>
+                          <Top>5.57994in</Top>
                           <Left>0.11003in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>42</ZIndex>
+                          <ZIndex>43</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1329,7 +1361,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>imagination/sense of style</Value>
+                                  <Value>articulation marks</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1337,11 +1369,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.37369in</Top>
+                          <Top>5.57994in</Top>
                           <Left>0.37253in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.69686in</Width>
-                          <ZIndex>43</ZIndex>
+                          <Width>1.45395in</Width>
+                          <ZIndex>44</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1354,11 +1386,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle13">
                           <KeepTogether>true</KeepTogether>
-                          <Top>5.66535in</Top>
+                          <Top>5.8716in</Top>
                           <Left>0.11003in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>44</ZIndex>
+                          <ZIndex>45</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1372,7 +1404,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>stage presence</Value>
+                                  <Value>memorization</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1380,11 +1412,705 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.66535in</Top>
+                          <Top>5.8716in</Top>
                           <Left>0.37253in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>45</ZIndex>
+                          <ZIndex>46</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox73">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Yes  No</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>3.1584in</Top>
+                          <Left>4.75688in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.69444in</Width>
+                          <ZIndex>47</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle28">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>3.42577in</Top>
+                          <Left>4.78188in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>48</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox74">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>adjusted bench</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>3.42229in</Top>
+                          <Left>5.42077in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>49</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle29">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>3.71744in</Top>
+                          <Left>4.78188in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>50</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox75">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>heels on floor for pedals</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>3.71396in</Top>
+                          <Left>5.40688in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.87062in</Width>
+                          <ZIndex>51</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle30">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>4.00912in</Top>
+                          <Left>4.78188in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>52</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox76">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>took warm-up time</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>4.00564in</Top>
+                          <Left>5.42077in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>53</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle31">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>3.42577in</Top>
+                          <Left>5.10132in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>54</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Rectangle Name="Rectangle32">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>3.71744in</Top>
+                          <Left>5.10132in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>55</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Rectangle Name="Rectangle33">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>4.00912in</Top>
+                          <Left>5.10132in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>56</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox80">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>RHYTHM</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>6.16327in</Top>
+                          <Left>0.11003in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.26645in</Width>
+                          <ZIndex>57</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle34">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>6.36952in</Top>
+                          <Left>0.10669in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>58</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox81">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>counting</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>6.36952in</Top>
+                          <Left>0.3692in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>59</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle35">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>6.66119in</Top>
+                          <Left>0.10669in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>60</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox82">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>steady tempo</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>6.66119in</Top>
+                          <Left>0.3692in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>61</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle36">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>6.95287in</Top>
+                          <Left>0.10669in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>62</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox83">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>appropriate tempo</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>6.95287in</Top>
+                          <Left>0.3692in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>63</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle37">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>7.24452in</Top>
+                          <Left>0.10669in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>64</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox84">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>control/continuity</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>7.24452in</Top>
+                          <Left>0.3692in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>65</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox85">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>MUSICIANSHIP</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>7.53618in</Top>
+                          <Left>0.10669in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.26645in</Width>
+                          <ZIndex>66</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle38">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>7.75493in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>67</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox86">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>dynamics</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>7.75493in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>68</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle39">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>8.0466in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>69</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox87">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>phrase shaping</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>8.0466in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>70</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle40">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>8.33828in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>71</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox88">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>balance LH/RH</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>8.33828in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>72</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle41">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>8.62993in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>73</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox89">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>interpretation</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>8.62993in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>74</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle42">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>8.9216in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>75</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox90">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>appropriate style</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>8.9216in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>76</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle43">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>9.21328in</Top>
+                          <Left>0.10336in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>77</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox91">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>tone quality</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>9.21328in</Top>
+                          <Left>0.36587in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>78</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1684,7 +2410,7 @@
                           <Left>0.11125in</Left>
                           <Height>0.6875in</Height>
                           <Width>7.40625in</Width>
-                          <ZIndex>46</ZIndex>
+                          <ZIndex>79</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1717,7 +2443,7 @@
                           <Left>3.38208in</Left>
                           <Height>0.28542in</Height>
                           <Width>4.13542in</Width>
-                          <ZIndex>47</ZIndex>
+                          <ZIndex>80</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1933,7 +2659,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_JudgeVocalForms</CommandText>
+        <CommandText>sp_Reports_JudgePianoForms</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>

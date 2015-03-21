@@ -59,7 +59,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>VOCAL</Value>
+                                  <Value>STRINGS</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -96,7 +96,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>DISTRICT Student Audition Evaluation</Value>
+                                  <Value>BADGER Competition Evaluation</Value>
                                   <Style>
                                     <FontFamily>Verdana</FontFamily>
                                     <FontSize>14pt</FontSize>
@@ -162,47 +162,12 @@
                                 <PaddingBottom>2pt</PaddingBottom>
                               </Style>
                             </Textbox>
-                            <Textbox Name="Textbox16">
-                              <CanGrow>true</CanGrow>
-                              <KeepTogether>true</KeepTogether>
-                              <Paragraphs>
-                                <Paragraph>
-                                  <TextRuns>
-                                    <TextRun>
-                                      <Value>Total Points</Value>
-                                      <Style>
-                                        <FontSize>14pt</FontSize>
-                                        <FontWeight>Bold</FontWeight>
-                                      </Style>
-                                    </TextRun>
-                                  </TextRuns>
-                                  <Style>
-                                    <TextAlign>Center</TextAlign>
-                                  </Style>
-                                </Paragraph>
-                              </Paragraphs>
-                              <rd:DefaultName>Textbox4</rd:DefaultName>
-                              <Top>0.28042in</Top>
-                              <Left>0.02083in</Left>
-                              <Height>0.5698in</Height>
-                              <Width>1.14583in</Width>
-                              <ZIndex>1</ZIndex>
-                              <Style>
-                                <Border>
-                                  <Style>None</Style>
-                                </Border>
-                                <PaddingLeft>2pt</PaddingLeft>
-                                <PaddingRight>2pt</PaddingRight>
-                                <PaddingTop>2pt</PaddingTop>
-                                <PaddingBottom>2pt</PaddingBottom>
-                              </Style>
-                            </Textbox>
                             <Line Name="Line7">
                               <Top>0.29875in</Top>
                               <Left>0.00701in</Left>
                               <Height>0in</Height>
                               <Width>1.92708in</Width>
-                              <ZIndex>2</ZIndex>
+                              <ZIndex>1</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>Solid</Style>
@@ -233,7 +198,7 @@
                               <Left>1.20833in</Left>
                               <Height>0.25in</Height>
                               <Width>0.65625in</Width>
-                              <ZIndex>3</ZIndex>
+                              <ZIndex>2</ZIndex>
                               <Style>
                                 <Border>
                                   <Style>None</Style>
@@ -248,7 +213,7 @@
                           </ReportItems>
                           <KeepTogether>true</KeepTogether>
                           <Left>5.77007in</Left>
-                          <Height>0.8691in</Height>
+                          <Height>0.29875in</Height>
                           <Width>1.9341in</Width>
                           <ZIndex>3</ZIndex>
                           <Style>
@@ -259,7 +224,7 @@
                         </Rectangle>
                         <Line Name="Line8">
                           <Left>6.95417in</Left>
-                          <Height>0.8691in</Height>
+                          <Height>0.29875in</Height>
                           <Width>0in</Width>
                           <ZIndex>4</ZIndex>
                           <Style>
@@ -268,148 +233,6 @@
                             </Border>
                           </Style>
                         </Line>
-                        <Textbox Name="Textbox17">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Audition Type</Value>
-                                  <Style>
-                                    <FontSize>12pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>0.93in</Top>
-                          <Left>0.15896in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.27083in</Width>
-                          <ZIndex>5</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Audition_Type2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Audition_Type.Value</Value>
-                                  <Style>
-                                    <FontStyle>Italic</FontStyle>
-                                    <FontSize>12pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <Top>0.93847in</Top>
-                          <Left>1.47146in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.02083in</Width>
-                          <ZIndex>6</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Textbox18">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Audition Track</Value>
-                                  <Style>
-                                    <FontSize>12pt</FontSize>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>1.24403in</Top>
-                          <Left>0.15896in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.27083in</Width>
-                          <ZIndex>7</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="Audition_Track2">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Audition_Track.Value</Value>
-                                  <Style>
-                                    <FontStyle>Italic</FontStyle>
-                                    <FontSize>12pt</FontSize>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <Top>1.2525in</Top>
-                          <Left>1.47146in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.02083in</Width>
-                          <ZIndex>8</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
                         <Textbox Name="Textbox19">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
@@ -430,11 +253,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>1.58237in</Top>
+                          <Top>1.26293in</Top>
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.27083in</Width>
-                          <ZIndex>9</ZIndex>
+                          <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -465,11 +288,11 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Top>1.58237in</Top>
+                          <Top>1.26293in</Top>
                           <Left>1.47146in</Left>
                           <Height>0.25in</Height>
                           <Width>1.02083in</Width>
-                          <ZIndex>10</ZIndex>
+                          <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -505,7 +328,7 @@
                           <Left>3.70062in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
-                          <ZIndex>11</ZIndex>
+                          <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -539,7 +362,7 @@
                           <Left>5.04437in</Left>
                           <Height>0.25in</Height>
                           <Width>0.65625in</Width>
-                          <ZIndex>12</ZIndex>
+                          <ZIndex>8</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -575,7 +398,7 @@
                           <Left>3.70063in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
-                          <ZIndex>13</ZIndex>
+                          <ZIndex>9</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -609,7 +432,7 @@
                           <Left>5.04438in</Left>
                           <Height>0.25in</Height>
                           <Width>2.65978in</Width>
-                          <ZIndex>14</ZIndex>
+                          <ZIndex>10</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -641,11 +464,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>1.58237in</Top>
-                          <Left>3.70062in</Left>
+                          <Top>0.93945in</Top>
+                          <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
-                          <ZIndex>15</ZIndex>
+                          <ZIndex>11</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -676,11 +499,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Teacher_Id</rd:DefaultName>
-                          <Top>1.58237in</Top>
-                          <Left>5.04437in</Left>
+                          <Top>0.93945in</Top>
+                          <Left>1.50271in</Left>
                           <Height>0.25in</Height>
                           <Width>0.65625in</Width>
-                          <ZIndex>16</ZIndex>
+                          <ZIndex>12</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -716,7 +539,7 @@
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.53472in</Width>
-                          <ZIndex>17</ZIndex>
+                          <ZIndex>13</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -752,7 +575,7 @@
                           <Left>1.83604in</Left>
                           <Height>0.25in</Height>
                           <Width>5.86812in</Width>
-                          <ZIndex>18</ZIndex>
+                          <ZIndex>14</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -788,7 +611,7 @@
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.53472in</Width>
-                          <ZIndex>19</ZIndex>
+                          <ZIndex>15</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -824,7 +647,7 @@
                           <Left>1.83604in</Left>
                           <Height>0.25in</Height>
                           <Width>4.63542in</Width>
-                          <ZIndex>20</ZIndex>
+                          <ZIndex>16</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -860,7 +683,7 @@
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.53472in</Width>
-                          <ZIndex>21</ZIndex>
+                          <ZIndex>17</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -896,7 +719,7 @@
                           <Left>1.83604in</Left>
                           <Height>0.25in</Height>
                           <Width>4.63542in</Width>
-                          <ZIndex>22</ZIndex>
+                          <ZIndex>18</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -913,7 +736,7 @@
                           <Left>0.15in</Left>
                           <Height>0in</Height>
                           <Width>7.59104in</Width>
-                          <ZIndex>23</ZIndex>
+                          <ZIndex>19</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -925,7 +748,7 @@
                           <Left>0.15in</Left>
                           <Height>0in</Height>
                           <Width>7.59104in</Width>
-                          <ZIndex>24</ZIndex>
+                          <ZIndex>20</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -937,7 +760,7 @@
                           <Left>0.15in</Left>
                           <Height>0in</Height>
                           <Width>7.59104in</Width>
-                          <ZIndex>25</ZIndex>
+                          <ZIndex>21</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -965,7 +788,7 @@
                           <Left>0.22583in</Left>
                           <Height>0.25in</Height>
                           <Width>7.40881in</Width>
-                          <ZIndex>26</ZIndex>
+                          <ZIndex>22</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -983,7 +806,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>VOCAL</Value>
+                                  <Value>STRINGS</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -993,11 +816,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.14452in</Top>
-                          <Left>0.13335in</Left>
+                          <Top>3.22709in</Top>
+                          <Left>0.12167in</Left>
                           <Height>0.25in</Height>
                           <Width>1.26645in</Width>
-                          <ZIndex>27</ZIndex>
+                          <ZIndex>23</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1010,11 +833,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle4">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.33202in</Top>
-                          <Left>0.11336in</Left>
+                          <Top>3.41459in</Top>
+                          <Left>0.10168in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>28</ZIndex>
+                          <ZIndex>24</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1028,7 +851,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>pitch accuracy</Value>
+                                  <Value>pitch accuracy-intonation</Value>
                                   <Style />
                                 </TextRun>
                               </TextRuns>
@@ -1036,11 +859,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.33202in</Top>
-                          <Left>0.37586in</Left>
+                          <Top>3.41459in</Top>
+                          <Left>0.36418in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.45395in</Width>
-                          <ZIndex>29</ZIndex>
+                          <Width>2.12811in</Width>
+                          <ZIndex>25</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1053,11 +876,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle5">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.62368in</Top>
-                          <Left>0.11336in</Left>
+                          <Top>3.70625in</Top>
+                          <Left>0.10168in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>30</ZIndex>
+                          <ZIndex>26</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1079,11 +902,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.62368in</Top>
-                          <Left>0.37586in</Left>
+                          <Top>3.70625in</Top>
+                          <Left>0.36418in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>31</ZIndex>
+                          <ZIndex>27</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1096,11 +919,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle6">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.91535in</Top>
-                          <Left>0.11336in</Left>
+                          <Top>3.99792in</Top>
+                          <Left>0.10168in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>32</ZIndex>
+                          <ZIndex>28</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1122,11 +945,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.91535in</Top>
-                          <Left>0.37586in</Left>
+                          <Top>3.99792in</Top>
+                          <Left>0.36418in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>33</ZIndex>
+                          <ZIndex>29</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1139,11 +962,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle7">
                           <KeepTogether>true</KeepTogether>
-                          <Top>4.20702in</Top>
-                          <Left>0.11336in</Left>
+                          <Top>4.28959in</Top>
+                          <Left>0.10168in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>34</ZIndex>
+                          <ZIndex>30</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1165,11 +988,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>4.20702in</Top>
-                          <Left>0.37586in</Left>
+                          <Top>4.28959in</Top>
+                          <Left>0.36418in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>35</ZIndex>
+                          <ZIndex>31</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1182,11 +1005,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle8">
                           <KeepTogether>true</KeepTogether>
-                          <Top>4.49868in</Top>
-                          <Left>0.11336in</Left>
+                          <Top>4.58125in</Top>
+                          <Left>0.10168in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>36</ZIndex>
+                          <ZIndex>32</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1194,92 +1017,6 @@
                           </Style>
                         </Rectangle>
                         <Textbox Name="Textbox50">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>technique/breath control</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>4.49868in</Top>
-                          <Left>0.37586in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.69353in</Width>
-                          <ZIndex>37</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Rectangle Name="Rectangle10">
-                          <KeepTogether>true</KeepTogether>
-                          <Top>4.79035in</Top>
-                          <Left>0.11003in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
-                          <ZIndex>38</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                        </Rectangle>
-                        <Textbox Name="Textbox53">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>phrasing/diction</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>4.79035in</Top>
-                          <Left>0.37253in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.45395in</Width>
-                          <ZIndex>39</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Rectangle Name="Rectangle11">
-                          <KeepTogether>true</KeepTogether>
-                          <Top>5.08202in</Top>
-                          <Left>0.11003in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
-                          <ZIndex>40</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                        </Rectangle>
-                        <Textbox Name="Textbox54">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1294,11 +1031,97 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.08202in</Top>
-                          <Left>0.37253in</Left>
+                          <Top>4.58125in</Top>
+                          <Left>0.36418in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
-                          <ZIndex>41</ZIndex>
+                          <ZIndex>33</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle10">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>4.87291in</Top>
+                          <Left>0.09957in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>34</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox53">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>bow/RH technique</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>4.87291in</Top>
+                          <Left>0.36207in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>35</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle11">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>5.16458in</Top>
+                          <Left>0.09957in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>36</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox54">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>LH technique</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>5.16458in</Top>
+                          <Left>0.36207in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>37</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1311,11 +1134,11 @@
                         </Textbox>
                         <Rectangle Name="Rectangle12">
                           <KeepTogether>true</KeepTogether>
-                          <Top>5.37369in</Top>
-                          <Left>0.11003in</Left>
+                          <Top>5.45625in</Top>
+                          <Left>0.09957in</Left>
                           <Height>0.25in</Height>
                           <Width>0.25in</Width>
-                          <ZIndex>42</ZIndex>
+                          <ZIndex>38</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1323,6 +1146,49 @@
                           </Style>
                         </Rectangle>
                         <Textbox Name="Textbox55">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>phrasing/articulation</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox45</rd:DefaultName>
+                          <Top>5.45625in</Top>
+                          <Left>0.36207in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45395in</Width>
+                          <ZIndex>39</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Rectangle Name="Rectangle13">
+                          <KeepTogether>true</KeepTogether>
+                          <Top>5.74791in</Top>
+                          <Left>0.09957in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.25in</Width>
+                          <ZIndex>40</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <Textbox Name="Textbox56">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -1337,54 +1203,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.37369in</Top>
-                          <Left>0.37253in</Left>
+                          <Top>5.74791in</Top>
+                          <Left>0.36207in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.69686in</Width>
-                          <ZIndex>43</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Rectangle Name="Rectangle13">
-                          <KeepTogether>true</KeepTogether>
-                          <Top>5.66535in</Top>
-                          <Left>0.11003in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
-                          <ZIndex>44</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                          </Style>
-                        </Rectangle>
-                        <Textbox Name="Textbox56">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>stage presence</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>5.66535in</Top>
-                          <Left>0.37253in</Left>
-                          <Height>0.25in</Height>
-                          <Width>1.45395in</Width>
-                          <ZIndex>45</ZIndex>
+                          <Width>1.95395in</Width>
+                          <ZIndex>41</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1516,7 +1339,7 @@
                                 <Paragraph>
                                   <TextRuns>
                                     <TextRun>
-                                      <Value>Judge</Value>
+                                      <Value>Judge ID</Value>
                                       <Style>
                                         <FontSize>11pt</FontSize>
                                         <FontWeight>Bold</FontWeight>
@@ -1684,44 +1507,43 @@
                           <Left>0.11125in</Left>
                           <Height>0.6875in</Height>
                           <Width>7.40625in</Width>
-                          <ZIndex>46</ZIndex>
+                          <ZIndex>42</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
                           </Style>
                         </Rectangle>
-                        <Textbox Name="ReportTitle7">
+                        <Textbox Name="Textbox26">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Points:   1    2    3    4    5</Value>
+                                  <Value>  HM         RU         WIN</Value>
                                   <Style>
-                                    <FontFamily>Verdana</FontFamily>
-                                    <FontSize>14pt</FontSize>
+                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Right</TextAlign>
+                                <TextAlign>Left</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:WatermarkTextbox>Title</rd:WatermarkTextbox>
-                          <rd:DefaultName>ReportTitle</rd:DefaultName>
-                          <Top>9.17786in</Top>
-                          <Left>3.38208in</Left>
-                          <Height>0.28542in</Height>
-                          <Width>4.13542in</Width>
-                          <ZIndex>47</ZIndex>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Top>0.58368in</Top>
+                          <Left>5.7909in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.91327in</Width>
+                          <ZIndex>43</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1933,7 +1755,7 @@
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_JudgeVocalForms</CommandText>
+        <CommandText>sp_Reports_JudgeStringForms</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
