@@ -3352,15 +3352,18 @@
       <Query>
         <DataSourceName>DataSource</DataSourceName>
         <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
+          <QueryParameter Name="@geoId">
+            <Value>=Parameters!geoId.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@year">
+            <Value>=Parameters!year.Value</Value>
           </QueryParameter>
           <QueryParameter Name="@teacherId">
             <Value>=Parameters!teacherId.Value</Value>
           </QueryParameter>
         </QueryParameters>
         <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_StudentResults</CommandText>
+        <CommandText>sp_Reports_StudentResults_OOD</CommandText>
         <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
       </Query>
       <Fields>
@@ -3424,6 +3427,10 @@
           <DataField>Teacher</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Teacher_District_Id">
+          <DataField>Teacher_District_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="Composition_Name">
           <DataField>Composition_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -3452,30 +3459,21 @@
           <DataField>Award</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Num_Awards">
-          <DataField>Num_Awards</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
       </Fields>
-      <Filters>
-        <Filter>
-          <FilterExpression>=Fields!District_Id.Value</FilterExpression>
-          <Operator>NotEqual</Operator>
-          <FilterValues>
-            <FilterValue>=Fields!Student_District_Id.Value</FilterValue>
-          </FilterValues>
-        </Filter>
-      </Filters>
     </DataSet>
   </DataSets>
   <ReportParameters>
-    <ReportParameter Name="auditionOrgId">
-      <DataType>Integer</DataType>
-      <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
     <ReportParameter Name="teacherId">
       <DataType>Integer</DataType>
       <Prompt>teacher Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="geoId">
+      <DataType>Integer</DataType>
+      <Prompt>geo Id</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="year">
+      <DataType>Integer</DataType>
+      <Prompt>year</Prompt>
     </ReportParameter>
   </ReportParameters>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>

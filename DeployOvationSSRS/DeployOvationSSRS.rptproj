@@ -38,6 +38,22 @@
       <FullPath>AuditionRoomScheduleTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>BadgerInstrumentalJudgingFormEven.rdl</Name>
+      <FullPath>BadgerInstrumentalJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerInstrumentalJudgingFormEvenTest.rdl</Name>
+      <FullPath>BadgerInstrumentalJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerInstrumentalJudgingFormOdd.rdl</Name>
+      <FullPath>BadgerInstrumentalJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerInstrumentalJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerInstrumentalJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>BadgerKeyboardExecutiveSummary.rdl</Name>
       <FullPath>BadgerKeyboardExecutiveSummary.rdl</FullPath>
     </ProjectItem>
@@ -78,28 +94,52 @@
       <FullPath>BadgerNonKeyboardTeacherFeesTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerOrganJudgingForm.rdl</Name>
-      <FullPath>BadgerOrganJudgingForm.rdl</FullPath>
+      <Name>BadgerOrganJudgingFormEven.rdl</Name>
+      <FullPath>BadgerOrganJudgingFormEven.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerOrganJudgingFormTest.rdl</Name>
-      <FullPath>BadgerOrganJudgingFormTest.rdl</FullPath>
+      <Name>BadgerOrganJudgingFormEvenTest.rdl</Name>
+      <FullPath>BadgerOrganJudgingFormEvenTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerPianoJudgingForm.rdl</Name>
-      <FullPath>BadgerPianoJudgingForm.rdl</FullPath>
+      <Name>BadgerOrganJudgingFormOdd.rdl</Name>
+      <FullPath>BadgerOrganJudgingFormOdd.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerPianoJudgingFormTest.rdl</Name>
-      <FullPath>BadgerPianoJudgingFormTest.rdl</FullPath>
+      <Name>BadgerOrganJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerOrganJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerStringsJudgingForm.rdl</Name>
-      <FullPath>BadgerStringsJudgingForm.rdl</FullPath>
+      <Name>BadgerPianoJudgingFormEven.rdl</Name>
+      <FullPath>BadgerPianoJudgingFormEven.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerStringsJudgingFormTest.rdl</Name>
-      <FullPath>BadgerStringsJudgingFormTest.rdl</FullPath>
+      <Name>BadgerPianoJudgingFormEvenTest.rdl</Name>
+      <FullPath>BadgerPianoJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerPianoJudgingFormOdd.rdl</Name>
+      <FullPath>BadgerPianoJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerPianoJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerPianoJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerStringsJudgingFormEven.rdl</Name>
+      <FullPath>BadgerStringsJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerStringsJudgingFormEvenTest.rdl</Name>
+      <FullPath>BadgerStringsJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerStringsJudgingFormOdd.rdl</Name>
+      <FullPath>BadgerStringsJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerStringsJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerStringsJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>BadgerVocalInstrumentalExecutiveSummary.rdl</Name>
@@ -110,20 +150,20 @@
       <FullPath>BadgerVocalInstrumentalExecutiveSummaryTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerVocalJudgingForm.rdl</Name>
-      <FullPath>BadgerVocalJudgingForm.rdl</FullPath>
+      <Name>BadgerVocalJudgingFormEven.rdl</Name>
+      <FullPath>BadgerVocalJudgingFormEven.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerVocalJudgingFormTest.rdl</Name>
-      <FullPath>BadgerVocalJudgingFormTest.rdl</FullPath>
+      <Name>BadgerVocalJudgingFormEvenTest.rdl</Name>
+      <FullPath>BadgerVocalJudgingFormEvenTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerInstrumentalJudgingForm.rdl</Name>
-      <FullPath>BadgerInstrumentalJudgingForm.rdl</FullPath>
+      <Name>BadgerVocalJudgingFormOdd.rdl</Name>
+      <FullPath>BadgerVocalJudgingFormOdd.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerInstrumentalJudgingFormTest.rdl</Name>
-      <FullPath>BadgerInstrumentalJudgingFormTest.rdl</FullPath>
+      <Name>BadgerVocalJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerVocalJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>CollationCheckOff.rdl</Name>
@@ -174,12 +214,60 @@
       <FullPath>DistrictChairSummaryReportTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DistrictInstrumentalJudgingFormEven.rdl</Name>
+      <FullPath>DistrictInstrumentalJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictInstrumentalJudgingFormEvenTest.rdl</Name>
+      <FullPath>DistrictInstrumentalJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictInstrumentalJudgingFormOdd.rdl</Name>
+      <FullPath>DistrictInstrumentalJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictInstrumentalJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictInstrumentalJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DistrictJudgesStatistics.rdl</Name>
       <FullPath>DistrictJudgesStatistics.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictJudgesStatisticsTest.rdl</Name>
       <FullPath>DistrictJudgesStatisticsTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictOrganJudgingFormEven.rdl</Name>
+      <FullPath>DistrictOrganJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictOrganJudgingFormEvenTest.rdl</Name>
+      <FullPath>DistrictOrganJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictOrganJudgingFormOdd.rdl</Name>
+      <FullPath>DistrictOrganJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictOrganJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictOrganJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictPianoJudgingFormEven.rdl</Name>
+      <FullPath>DistrictPianoJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictPianoJudgingFormEvenTest.rdl</Name>
+      <FullPath>DistrictPianoJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictPianoJudgingFormOdd.rdl</Name>
+      <FullPath>DistrictPianoJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictPianoJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictPianoJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictRegistrationCheckIn.rdl</Name>
@@ -190,8 +278,32 @@
       <FullPath>DistrictRegistrationCheckInTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DistrictStringsJudgingFormEven.rdl</Name>
+      <FullPath>DistrictStringsJudgingFormEven.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictStringsJudgingFormEvenTest.rdl</Name>
+      <FullPath>DistrictStringsJudgingFormEvenTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictStringsJudgingFormOdd.rdl</Name>
+      <FullPath>DistrictStringsJudgingFormOdd.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictStringsJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictStringsJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>DistrictStudentResults.rdl</Name>
       <FullPath>DistrictStudentResults.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictStudentResults_V2.rdl</Name>
+      <FullPath>DistrictStudentResults_V2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictStudentResults_V2Test.rdl</Name>
+      <FullPath>DistrictStudentResults_V2Test.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictStudentResultsAwards.rdl</Name>
@@ -238,44 +350,36 @@
       <FullPath>DistrictTeacherSummaryTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>InstrumentalJudgingForm.rdl</Name>
-      <FullPath>InstrumentalJudgingForm.rdl</FullPath>
+      <Name>DistrictVocalJudgingFormEven.rdl</Name>
+      <FullPath>DistrictVocalJudgingFormEven.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>InstrumentalJudgingFormTest.rdl</Name>
-      <FullPath>InstrumentalJudgingFormTest.rdl</FullPath>
+      <Name>DistrictVocalJudgingFormEvenTest.rdl</Name>
+      <FullPath>DistrictVocalJudgingFormEvenTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>KeyboardJudgingForm.rdl</Name>
-      <FullPath>KeyboardJudgingForm.rdl</FullPath>
+      <Name>DistrictVocalJudgingFormOdd.rdl</Name>
+      <FullPath>DistrictVocalJudgingFormOdd.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>KeyboardJudgingFormTest.rdl</Name>
-      <FullPath>KeyboardJudgingFormTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>OrganJudgingForm.rdl</Name>
-      <FullPath>OrganJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>OrganJudgingFormTest.rdl</Name>
-      <FullPath>OrganJudgingFormTest.rdl</FullPath>
+      <Name>DistrictVocalJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictVocalJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>OutOfDistrictStudentResults.rdl</Name>
       <FullPath>OutOfDistrictStudentResults.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>OutOfDistrictStudentResults_V2.rdl</Name>
+      <FullPath>OutOfDistrictStudentResults_V2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OutOfDistrictStudentResults_V2Test.rdl</Name>
+      <FullPath>OutOfDistrictStudentResults_V2Test.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>OutOfDistrictStudentResultsTest.rdl</Name>
       <FullPath>OutOfDistrictStudentResultsTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>PianoJudgingForm.rdl</Name>
-      <FullPath>PianoJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>PianoJudgingFormTest.rdl</Name>
-      <FullPath>PianoJudgingFormTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>RegistrationReport.rdl</Name>
@@ -318,16 +422,16 @@
       <FullPath>ShortRegistrationReportTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>StringsJudgingForm.rdl</Name>
-      <FullPath>StringsJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>StringsJudgingFormTest.rdl</Name>
-      <FullPath>StringsJudgingFormTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>StudentHistory.rdl</Name>
       <FullPath>StudentHistory.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>StudentHistory_V2.rdl</Name>
+      <FullPath>StudentHistory_V2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>StudentHistory_V2Test.rdl</Name>
+      <FullPath>StudentHistory_V2Test.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>StudentHistoryAwards.rdl</Name>
@@ -692,38 +796,6 @@
     <ProjectItem>
       <Name>TheoryTestCheckInTest.rdl</Name>
       <FullPath>TheoryTestCheckInTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>VocalJudgingForm.rdl</Name>
-      <FullPath>VocalJudgingForm.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>VocalJudgingFormTest.rdl</Name>
-      <FullPath>VocalJudgingFormTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DistrictStudentResults_V2.rdl</Name>
-      <FullPath>DistrictStudentResults_V2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>OutOfDistrictStudentResults_V2.rdl</Name>
-      <FullPath>OutOfDistrictStudentResults_V2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>StudentHistory_V2.rdl</Name>
-      <FullPath>StudentHistory_V2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DistrictStudentResults_V2Test.rdl</Name>
-      <FullPath>DistrictStudentResults_V2Test.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>OutOfDistrictStudentResults_V2Test.rdl</Name>
-      <FullPath>OutOfDistrictStudentResults_V2Test.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>StudentHistory_V2Test.rdl</Name>
-      <FullPath>StudentHistory_V2Test.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
