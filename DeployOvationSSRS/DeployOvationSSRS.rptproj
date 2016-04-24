@@ -122,10 +122,6 @@
       <FullPath>BadgerPianoJudgingFormOdd.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BadgerPianoJudgingFormOddTest.rdl</Name>
-      <FullPath>BadgerPianoJudgingFormOddTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>BadgerStringsJudgingFormEven.rdl</Name>
       <FullPath>BadgerStringsJudgingFormEven.rdl</FullPath>
     </ProjectItem>
@@ -264,10 +260,6 @@
     <ProjectItem>
       <Name>DistrictPianoJudgingFormOdd.rdl</Name>
       <FullPath>DistrictPianoJudgingFormOdd.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DistrictPianoJudgingFormOddTest.rdl</Name>
-      <FullPath>DistrictPianoJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>DistrictRegistrationCheckIn.rdl</Name>
@@ -796,6 +788,14 @@
     <ProjectItem>
       <Name>TheoryTestCheckInTest.rdl</Name>
       <FullPath>TheoryTestCheckInTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BadgerPianoJudgingFormOddTest.rdl</Name>
+      <FullPath>BadgerPianoJudgingFormOddTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DistrictPianoJudgingFormOddTest.rdl</Name>
+      <FullPath>DistrictPianoJudgingFormOddTest.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

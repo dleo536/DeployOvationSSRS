@@ -11,7 +11,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>10.36792in</Height>
+              <Height>10.25in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -775,7 +775,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>Judge: Please write positive, encouraging comments in addition to specific suggestions for improvement. REMINDER: Be sure to provide feedback that clearly supports the score given, especially if any points have been deducted.</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -784,10 +786,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox44</rd:DefaultName>
-                          <Top>2.76465in</Top>
-                          <Left>2.90616in</Left>
-                          <Height>0.58188in</Height>
-                          <Width>4.75881in</Width>
+                          <Top>2.72577in</Top>
+                          <Left>2.31944in</Left>
+                          <Height>0.5in</Height>
+                          <Width>5.34553in</Width>
                           <ZIndex>22</ZIndex>
                           <Style>
                             <Border>
@@ -828,6 +830,7 @@
                                 <TextRun>
                                   <Value>TECHNIQUE</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -860,7 +863,7 @@
                                 <TextRun>
                                   <Value>hand/body position/posture</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -869,9 +872,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>4.62496in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.22222in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.77138in</Width>
                           <ZIndex>24</ZIndex>
                           <Style>
                             <Border>
@@ -892,7 +895,7 @@
                                 <TextRun>
                                   <Value>pedal use: control/timing/heel on floor</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -901,9 +904,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>4.81939in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.95701in</Width>
                           <ZIndex>25</ZIndex>
                           <Style>
                             <Border>
@@ -924,7 +927,7 @@
                                 <TextRun>
                                   <Value>control of legato or staccato touch</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -933,9 +936,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>5.05551in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.84034in</Width>
                           <ZIndex>26</ZIndex>
                           <Style>
                             <Border>
@@ -956,7 +959,7 @@
                                 <TextRun>
                                   <Value>fingering</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -965,7 +968,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>5.27773in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>27</ZIndex>
@@ -988,6 +991,7 @@
                                 <TextRun>
                                   <Value>ACCURACY</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1020,7 +1024,7 @@
                                 <TextRun>
                                   <Value>notes</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1029,7 +1033,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>5.72217in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>29</ZIndex>
@@ -1052,7 +1056,7 @@
                                 <TextRun>
                                   <Value>rests</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1061,7 +1065,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>5.94439in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>30</ZIndex>
@@ -1084,7 +1088,7 @@
                                 <TextRun>
                                   <Value>counting</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1093,7 +1097,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>6.16661in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>31</ZIndex>
@@ -1116,7 +1120,7 @@
                                 <TextRun>
                                   <Value>dynamics</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1125,7 +1129,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>6.38in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>32</ZIndex>
@@ -1146,8 +1150,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Yes  No</Value>
+                                  <Value>Yes   No</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1156,7 +1161,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.02986in</Top>
+                          <Top>3.00209in</Top>
                           <Left>0.15896in</Left>
                           <Height>0.20833in</Height>
                           <Width>0.69444in</Width>
@@ -1173,10 +1178,10 @@
                         </Textbox>
                         <Rectangle Name="Rectangle28">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.25557in</Top>
+                          <Top>3.2278in</Top>
                           <Left>0.18396in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>34</ZIndex>
                           <Style>
                             <Border>
@@ -1193,7 +1198,7 @@
                                 <TextRun>
                                   <Value>made use of warm-up time</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1201,10 +1206,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.25209in</Top>
+                          <Top>3.22432in</Top>
                           <Left>0.74in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.01387in</Width>
+                          <Width>1.41896in</Width>
                           <ZIndex>35</ZIndex>
                           <Style>
                             <Border>
@@ -1218,10 +1223,10 @@
                         </Textbox>
                         <Rectangle Name="Rectangle29">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.54724in</Top>
+                          <Top>3.53335in</Top>
                           <Left>0.18396in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>36</ZIndex>
                           <Style>
                             <Border>
@@ -1238,7 +1243,7 @@
                                 <TextRun>
                                   <Value>adjusted bench (height/distance)</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1246,10 +1251,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.54376in</Top>
+                          <Top>3.50209in</Top>
                           <Left>0.74in</Left>
-                          <Height>0.25in</Height>
-                          <Width>2.02776in</Width>
+                          <Height>0.30557in</Height>
+                          <Width>1.43285in</Width>
                           <ZIndex>37</ZIndex>
                           <Style>
                             <Border>
@@ -1265,8 +1270,8 @@
                           <KeepTogether>true</KeepTogether>
                           <Top>3.83892in</Top>
                           <Left>0.18396in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>38</ZIndex>
                           <Style>
                             <Border>
@@ -1281,9 +1286,20 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>provided an original, numbered score</Value>
+                                  <Value>provided an original, </Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>numbered score</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1291,10 +1307,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.83544in</Top>
+                          <Top>3.82155in</Top>
                           <Left>0.74in</Left>
-                          <Height>0.25in</Height>
-                          <Width>2.13887in</Width>
+                          <Height>0.29514in</Height>
+                          <Width>1.43285in</Width>
                           <ZIndex>39</ZIndex>
                           <Style>
                             <Border>
@@ -1308,10 +1324,10 @@
                         </Textbox>
                         <Rectangle Name="Rectangle31">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.25557in</Top>
+                          <Top>3.2278in</Top>
                           <Left>0.5034in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>40</ZIndex>
                           <Style>
                             <Border>
@@ -1321,10 +1337,10 @@
                         </Rectangle>
                         <Rectangle Name="Rectangle32">
                           <KeepTogether>true</KeepTogether>
-                          <Top>3.54724in</Top>
+                          <Top>3.53335in</Top>
                           <Left>0.5034in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>41</ZIndex>
                           <Style>
                             <Border>
@@ -1336,8 +1352,8 @@
                           <KeepTogether>true</KeepTogether>
                           <Top>3.83892in</Top>
                           <Left>0.5034in</Left>
-                          <Height>0.25in</Height>
-                          <Width>0.25in</Width>
+                          <Height>0.2in</Height>
+                          <Width>0.2in</Width>
                           <ZIndex>42</ZIndex>
                           <Style>
                             <Border>
@@ -1354,7 +1370,7 @@
                                 <TextRun>
                                   <Value>articulation marks</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1363,7 +1379,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>6.59in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>43</ZIndex>
@@ -1386,7 +1402,7 @@
                                 <TextRun>
                                   <Value>memorization</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1395,7 +1411,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>6.78in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>44</ZIndex>
@@ -1694,7 +1710,7 @@
                                 <TextRun>
                                   <Value>Pre-performance observations:</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <TextDecoration>Underline</TextDecoration>
                                   </Style>
@@ -1705,9 +1721,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>2.73688in</Top>
-                          <Left>0.15896in</Left>
+                          <Left>0.15in</Left>
                           <Height>0.25132in</Height>
-                          <Width>2.67776in</Width>
+                          <Width>2.1in</Width>
                           <ZIndex>47</ZIndex>
                           <Style>
                             <Border>
@@ -1728,7 +1744,6 @@
                                 <TextRun>
                                   <Value>Criteria for consideration:</Value>
                                   <Style>
-                                    <FontSize>12pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                     <TextDecoration>Underline</TextDecoration>
                                   </Style>
@@ -1739,9 +1754,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>4.15836in</Top>
-                          <Left>0.15896in</Left>
+                          <Left>0.15in</Left>
                           <Height>0.26521in</Height>
-                          <Width>2.67776in</Width>
+                          <Width>2.02285in</Width>
                           <ZIndex>48</ZIndex>
                           <Style>
                             <Border>
@@ -1763,6 +1778,7 @@
                                   <Value>The student..........</Value>
                                   <Style>
                                     <FontStyle>Italic</FontStyle>
+                                    <FontSize>9pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1770,8 +1786,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
-                          <Top>3.02986in</Top>
-                          <Left>1.05085in</Left>
+                          <Top>3.00209in</Top>
+                          <Left>0.80085in</Left>
                           <Height>0.20833in</Height>
                           <Width>1.23054in</Width>
                           <ZIndex>49</ZIndex>
@@ -1794,6 +1810,7 @@
                                 <TextRun>
                                   <Value>RHYTHMIC PULSE/TEMPO</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1805,7 +1822,7 @@
                           <Top>7.03in</Top>
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.67776in</Width>
+                          <Width>2.06326in</Width>
                           <ZIndex>50</ZIndex>
                           <Style>
                             <Border>
@@ -1826,7 +1843,7 @@
                                 <TextRun>
                                   <Value>appropriate tempo choice</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1835,9 +1852,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>7.2175in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.22222in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.94561in</Width>
                           <ZIndex>51</ZIndex>
                           <Style>
                             <Border>
@@ -1858,7 +1875,7 @@
                                 <TextRun>
                                   <Value>displays sense/feeling of a steady pulse</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1867,9 +1884,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>7.41193in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>2.08186in</Width>
                           <ZIndex>52</ZIndex>
                           <Style>
                             <Border>
@@ -1890,7 +1907,7 @@
                                 <TextRun>
                                   <Value>appropriate rubato when applicable</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1899,9 +1916,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>7.64805in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.95949in</Width>
                           <ZIndex>53</ZIndex>
                           <Style>
                             <Border>
@@ -1922,7 +1939,7 @@
                                 <TextRun>
                                   <Value>overall control of the chosen tempo</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1931,9 +1948,9 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>7.87027in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
-                          <Width>2.43525in</Width>
+                          <Width>1.95949in</Width>
                           <ZIndex>54</ZIndex>
                           <Style>
                             <Border>
@@ -1954,6 +1971,7 @@
                                 <TextRun>
                                   <Value>MUSICIANSHIP</Value>
                                   <Style>
+                                    <FontSize>9pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1986,7 +2004,7 @@
                                 <TextRun>
                                   <Value>tone quality</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1995,7 +2013,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>8.31471in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>56</ZIndex>
@@ -2018,7 +2036,7 @@
                                 <TextRun>
                                   <Value>phrase shaping</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2027,7 +2045,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>8.53693in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>57</ZIndex>
@@ -2050,7 +2068,7 @@
                                 <TextRun>
                                   <Value>balance LH/RH</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2059,7 +2077,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>8.75915in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>58</ZIndex>
@@ -2082,7 +2100,7 @@
                                 <TextRun>
                                   <Value>interpretation</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2091,7 +2109,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>8.97254in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>59</ZIndex>
@@ -2114,7 +2132,7 @@
                                 <TextRun>
                                   <Value>appropriate style</Value>
                                   <Style>
-                                    <FontSize>9pt</FontSize>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -2123,7 +2141,7 @@
                           </Paragraphs>
                           <rd:DefaultName>Textbox45</rd:DefaultName>
                           <Top>9.18254in</Top>
-                          <Left>0.40147in</Left>
+                          <Left>0.27662in</Left>
                           <Height>0.25in</Height>
                           <Width>1.45395in</Width>
                           <ZIndex>60</ZIndex>
@@ -2139,10 +2157,22 @@
                         </Textbox>
                         <Line Name="Line1">
                           <Top>2.69521in</Top>
-                          <Left>2.85292in</Left>
-                          <Height>7.55479in</Height>
+                          <Left>2.25in</Left>
+                          <Height>6.87146in</Height>
                           <Width>0in</Width>
                           <ZIndex>61</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Line Name="Line13">
+                          <Top>9.5625in</Top>
+                          <Left>2.82072in</Left>
+                          <Height>0.6875in</Height>
+                          <Width>0in</Width>
+                          <ZIndex>62</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -2162,7 +2192,7 @@
               </TablixCells>
             </TablixRow>
             <TablixRow>
-              <Height>0.63333in</Height>
+              <Height>0.5in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -2485,7 +2515,7 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Height>11.03458in</Height>
+        <Height>10.78333in</Height>
         <Width>7.84375in</Width>
         <Style>
           <Border>
@@ -2494,7 +2524,7 @@
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>11.08459in</Height>
+    <Height>10.78333in</Height>
     <Style>
       <Border>
         <Style>None</Style>
