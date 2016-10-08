@@ -2,7 +2,7 @@
 <RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="WisconsinMusicConnection">
   <ConnectionProperties>
     <Extension>SQL</Extension>
-    <ConnectString>Data Source=sunflower.arvixe.com;Initial Catalog=WisconsinMusic</ConnectString>
+    <ConnectString>Data Source=104.238.102.139;Initial Catalog=WisconsinMusic</ConnectString>
   </ConnectionProperties>
   <DataSourceID>0e39b4a7-8607-4969-b136-7c2128d49eb2</DataSourceID>
 </RptDataSource>
