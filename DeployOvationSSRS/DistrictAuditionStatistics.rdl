@@ -1,5 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="DataSource">
+      <DataSourceReference>/Wisconsin Music</DataSourceReference>
+      <rd:DataSourceID>1a154f21-676a-4f41-88bf-c5941da4548c</rd:DataSourceID>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSetTheory">
+      <Fields>
+        <Field Name="TheoryLevel">
+          <DataField>TheoryLevel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="District">
+          <DataField>District</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumExams">
+          <DataField>NumExams</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TotalScore">
+          <DataField>TotalScore</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_Audition_Stats_TheoryResults</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="DataSetTrack">
+      <Fields>
+        <Field Name="Audition_Track">
+          <DataField>Audition_Track</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Total_Points">
+          <DataField>Total_Points</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Num_Auditions">
+          <DataField>Num_Auditions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_Audition_Stats_TrackResults</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+    <DataSet Name="DataSetState">
+      <Fields>
+        <Field Name="State_Track_Auditions">
+          <DataField>State_Track_Auditions</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="State_Eligible">
+          <DataField>State_Eligible</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NonState_Eligible_Comp_Points">
+          <DataField>NonState_Eligible_Comp_Points</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NonState_Eligible_Comp_Points_Count">
+          <DataField>NonState_Eligible_Comp_Points_Count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NonState_Eligible_Theory_Points">
+          <DataField>NonState_Eligible_Theory_Points</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NonState_Eligible_Theory_Points_Count">
+          <DataField>NonState_Eligible_Theory_Points_Count</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_Reports_Audition_Stats_StateQualifiers</CommandText>
+        <QueryParameters>
+          <QueryParameter Name="@auditionOrgId">
+            <Value>=Parameters!auditionOrgId.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+    </DataSet>
+  </DataSets>
   <Body>
     <ReportItems>
       <Tablix Name="Tablix1">
@@ -727,7 +837,7 @@
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=IIf(NOT(Fields!Audition_Track.Value Like "D2*"),15,10)</Value>
+                              <Value>=IIf(Fields!Audition_Track.Value = "D2NM",8,iif(Fields!Audition_Track.value="D2",10,15))</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -1765,6 +1875,12 @@
       </Border>
     </Style>
   </Body>
+  <ReportParameters>
+    <ReportParameter Name="auditionOrgId">
+      <DataType>Integer</DataType>
+      <Prompt>audition Org Id</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <Width>8in</Width>
   <Page>
     <PageHeader>
@@ -1928,124 +2044,7 @@
     <BottomMargin>0.635cm</BottomMargin>
     <Style />
   </Page>
-  <AutoRefresh>0</AutoRefresh>
-  <DataSources>
-    <DataSource Name="DataSource">
-      <DataSourceReference>WisconsinMusicConnection</DataSourceReference>
-      <rd:SecurityType>None</rd:SecurityType>
-      <rd:DataSourceID>1a154f21-676a-4f41-88bf-c5941da4548c</rd:DataSourceID>
-    </DataSource>
-  </DataSources>
-  <DataSets>
-    <DataSet Name="DataSetTheory">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_Audition_Stats_TheoryResults</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="TheoryLevel">
-          <DataField>TheoryLevel</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="District">
-          <DataField>District</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Year">
-          <DataField>Year</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NumExams">
-          <DataField>NumExams</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="TotalScore">
-          <DataField>TotalScore</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DataSetTrack">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_Audition_Stats_TrackResults</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="Audition_Track">
-          <DataField>Audition_Track</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Total_Points">
-          <DataField>Total_Points</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Num_Auditions">
-          <DataField>Num_Auditions</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="DataSetState">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@auditionOrgId">
-            <Value>=Parameters!auditionOrgId.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>sp_Reports_Audition_Stats_StateQualifiers</CommandText>
-        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
-      </Query>
-      <Fields>
-        <Field Name="State_Track_Auditions">
-          <DataField>State_Track_Auditions</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="State_Eligible">
-          <DataField>State_Eligible</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NonState_Eligible_Comp_Points">
-          <DataField>NonState_Eligible_Comp_Points</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NonState_Eligible_Comp_Points_Count">
-          <DataField>NonState_Eligible_Comp_Points_Count</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NonState_Eligible_Theory_Points">
-          <DataField>NonState_Eligible_Theory_Points</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="NonState_Eligible_Theory_Points_Count">
-          <DataField>NonState_Eligible_Theory_Points_Count</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
-  <ReportParameters>
-    <ReportParameter Name="auditionOrgId">
-      <DataType>Integer</DataType>
-      <Prompt>audition Org Id</Prompt>
-    </ReportParameter>
-  </ReportParameters>
-  <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
   <rd:ReportID>1244139f-e9e5-46f7-9192-7606ca7359be</rd:ReportID>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://consulting/Reportserver_Express_2012</rd:ReportServerUrl>
 </Report>

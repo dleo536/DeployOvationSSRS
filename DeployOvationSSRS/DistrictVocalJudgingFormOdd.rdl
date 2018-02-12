@@ -2,7 +2,7 @@
 <Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
   <DataSources>
     <DataSource Name="DataSource1">
-      <DataSourceReference>/WisconsinMusicConnection</DataSourceReference>
+      <DataSourceReference>/Wisconsin Music</DataSourceReference>
       <rd:DataSourceID>39121eeb-4fb9-4284-bf49-732705c07b8e</rd:DataSourceID>
       <rd:SecurityType>None</rd:SecurityType>
     </DataSource>
@@ -18,6 +18,10 @@
           <DataField>Student_Id</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="Audition_Id">
+          <DataField>Audition_Id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
         <Field Name="Student_Name">
           <DataField>Student_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -26,8 +30,16 @@
           <DataField>Instrument</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="Student_First_Name">
+          <DataField>Student_First_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="Grade">
           <DataField>Grade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Student_Last_Name">
+          <DataField>Student_Last_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Audition_Type">
@@ -45,6 +57,10 @@
         <Field Name="Composition">
           <DataField>Composition</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AuditionStartTime">
+          <DataField>AuditionStartTime</DataField>
+          <rd:TypeName>System.TimeSpan</rd:TypeName>
         </Field>
         <Field Name="Composer">
           <DataField>Composer</DataField>
@@ -378,7 +394,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>1.26293in</Top>
+                          <Top>1.35854in</Top>
                           <Left>0.15896in</Left>
                           <Height>0.25in</Height>
                           <Width>1.27083in</Width>
@@ -413,10 +429,10 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Top>1.26293in</Top>
+                          <Top>1.35854in</Top>
                           <Left>1.47146in</Left>
                           <Height>0.25in</Height>
-                          <Width>1.02083in</Width>
+                          <Width>2.01812in</Width>
                           <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
@@ -449,7 +465,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>0.93945in</Top>
+                          <Top>0.8691in</Top>
                           <Left>3.70062in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
@@ -483,7 +499,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Top>0.93945in</Top>
+                          <Top>0.8691in</Top>
                           <Left>5.04437in</Left>
                           <Height>0.25in</Height>
                           <Width>0.65625in</Width>
@@ -519,7 +535,7 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>1.26293in</Top>
+                          <Top>1.1191in</Top>
                           <Left>3.70063in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
@@ -553,7 +569,7 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <Top>1.26293in</Top>
+                          <Top>1.1191in</Top>
                           <Left>5.04438in</Left>
                           <Height>0.25in</Height>
                           <Width>2.65978in</Width>
@@ -589,8 +605,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Textbox4</rd:DefaultName>
-                          <Top>0.93945in</Top>
-                          <Left>0.15896in</Left>
+                          <Top>1.37243in</Top>
+                          <Left>3.70063in</Left>
                           <Height>0.25in</Height>
                           <Width>1.30208in</Width>
                           <ZIndex>11</ZIndex>
@@ -624,8 +640,8 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>Teacher_Id</rd:DefaultName>
-                          <Top>0.93945in</Top>
-                          <Left>1.50271in</Left>
+                          <Top>1.37243in</Top>
+                          <Left>5.04438in</Left>
                           <Height>0.25in</Height>
                           <Width>0.65625in</Width>
                           <ZIndex>12</ZIndex>
@@ -1072,7 +1088,7 @@
                                       <Value>=Fields!Room.Value</Value>
                                       <Style>
                                         <FontStyle>Italic</FontStyle>
-                                        <FontSize>12pt</FontSize>
+                                        <FontSize>11pt</FontSize>
                                       </Style>
                                     </TextRun>
                                   </TextRuns>
@@ -1082,9 +1098,9 @@
                                 </Paragraph>
                               </Paragraphs>
                               <Top>0.25in</Top>
-                              <Left>1.94302in</Left>
+                              <Left>1.75695in</Left>
                               <Height>0.25in</Height>
-                              <Width>1.26645in</Width>
+                              <Width>1.60749in</Width>
                               <ZIndex>7</ZIndex>
                               <Style>
                                 <Border>
@@ -1205,7 +1221,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>Needs Improvement</Value>
+                                                <Value />
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -1219,7 +1235,7 @@
                                         <rd:DefaultName>Textbox7</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
                                             <Width>2pt</Width>
@@ -1241,7 +1257,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>Progressing</Value>
+                                                <Value />
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -1255,7 +1271,7 @@
                                         <rd:DefaultName>Textbox3</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
                                             <Width>2pt</Width>
@@ -1277,7 +1293,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>Consistent/Well Done</Value>
+                                                <Value />
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -1291,7 +1307,7 @@
                                         <rd:DefaultName>Textbox5</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
                                             <Width>2pt</Width>
@@ -1360,7 +1376,7 @@
                                         <rd:DefaultName>Textbox14</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1389,7 +1405,7 @@
                                         <rd:DefaultName>Textbox16</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1418,7 +1434,7 @@
                                         <rd:DefaultName>Textbox17</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1484,7 +1500,7 @@
                                         <rd:DefaultName>Textbox31</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1513,7 +1529,7 @@
                                         <rd:DefaultName>Textbox32</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1542,7 +1558,7 @@
                                         <rd:DefaultName>Textbox33</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1608,7 +1624,7 @@
                                         <rd:DefaultName>Textbox27</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1637,7 +1653,7 @@
                                         <rd:DefaultName>Textbox28</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1666,7 +1682,7 @@
                                         <rd:DefaultName>Textbox29</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1732,7 +1748,7 @@
                                         <rd:DefaultName>Textbox62</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1761,7 +1777,7 @@
                                         <rd:DefaultName>Textbox63</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1790,7 +1806,7 @@
                                         <rd:DefaultName>Textbox64</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -1856,11 +1872,12 @@
                                         <rd:DefaultName>Textbox55</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </BottomBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -1890,11 +1907,12 @@
                                         <rd:DefaultName>Textbox56</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </BottomBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -1924,11 +1942,12 @@
                                         <rd:DefaultName>Textbox60</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                           </Border>
                                           <BottomBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </BottomBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -1994,11 +2013,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -2029,11 +2048,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -2064,11 +2083,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
-                                            <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Color>White</Color>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -2512,7 +2531,7 @@
                                         <rd:DefaultName>Textbox35</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2541,7 +2560,7 @@
                                         <rd:DefaultName>Textbox36</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2570,7 +2589,7 @@
                                         <rd:DefaultName>Textbox37</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2636,7 +2655,7 @@
                                         <rd:DefaultName>Textbox74</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2665,7 +2684,7 @@
                                         <rd:DefaultName>Textbox75</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2694,7 +2713,7 @@
                                         <rd:DefaultName>Textbox76</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2760,7 +2779,7 @@
                                         <rd:DefaultName>Textbox70</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2789,7 +2808,7 @@
                                         <rd:DefaultName>Textbox71</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2818,7 +2837,7 @@
                                         <rd:DefaultName>Textbox72</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2884,7 +2903,7 @@
                                         <rd:DefaultName>Textbox114</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2913,7 +2932,7 @@
                                         <rd:DefaultName>Textbox115</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -2942,7 +2961,7 @@
                                         <rd:DefaultName>Textbox116</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3008,7 +3027,7 @@
                                         <rd:DefaultName>Textbox110</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3037,7 +3056,7 @@
                                         <rd:DefaultName>Textbox111</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3066,7 +3085,7 @@
                                         <rd:DefaultName>Textbox112</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3132,7 +3151,7 @@
                                         <rd:DefaultName>Textbox106</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3161,7 +3180,7 @@
                                         <rd:DefaultName>Textbox107</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3190,7 +3209,7 @@
                                         <rd:DefaultName>Textbox108</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3256,7 +3275,7 @@
                                         <rd:DefaultName>Textbox102</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3285,7 +3304,7 @@
                                         <rd:DefaultName>Textbox103</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3314,7 +3333,7 @@
                                         <rd:DefaultName>Textbox104</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3380,7 +3399,7 @@
                                         <rd:DefaultName>Textbox98</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3409,7 +3428,7 @@
                                         <rd:DefaultName>Textbox99</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3438,7 +3457,7 @@
                                         <rd:DefaultName>Textbox100</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3504,7 +3523,7 @@
                                         <rd:DefaultName>Textbox94</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3533,7 +3552,7 @@
                                         <rd:DefaultName>Textbox95</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3562,7 +3581,7 @@
                                         <rd:DefaultName>Textbox96</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3628,7 +3647,7 @@
                                         <rd:DefaultName>Textbox90</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3657,7 +3676,7 @@
                                         <rd:DefaultName>Textbox91</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3686,7 +3705,7 @@
                                         <rd:DefaultName>Textbox92</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -3751,11 +3770,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -3786,11 +3805,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -3821,11 +3840,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -4269,7 +4288,7 @@
                                         <rd:DefaultName>Textbox126</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4298,7 +4317,7 @@
                                         <rd:DefaultName>Textbox127</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4327,7 +4346,7 @@
                                         <rd:DefaultName>Textbox128</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4393,7 +4412,7 @@
                                         <rd:DefaultName>Textbox122</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4422,7 +4441,7 @@
                                         <rd:DefaultName>Textbox123</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4451,7 +4470,7 @@
                                         <rd:DefaultName>Textbox124</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4517,7 +4536,7 @@
                                         <rd:DefaultName>Textbox118</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4546,7 +4565,7 @@
                                         <rd:DefaultName>Textbox119</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4575,7 +4594,7 @@
                                         <rd:DefaultName>Textbox120</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4641,7 +4660,7 @@
                                         <rd:DefaultName>Textbox82</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4670,7 +4689,7 @@
                                         <rd:DefaultName>Textbox83</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4699,7 +4718,7 @@
                                         <rd:DefaultName>Textbox84</rd:DefaultName>
                                         <Style>
                                           <Border>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <PaddingLeft>2pt</PaddingLeft>
                                           <PaddingRight>2pt</PaddingRight>
@@ -4764,11 +4783,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -4799,11 +4818,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -4834,11 +4853,11 @@
                                         <Style>
                                           <Border>
                                             <Color>White</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                           </Border>
                                           <TopBorder>
                                             <Color>Black</Color>
-                                            <Style>Solid</Style>
+                                            <Style>None</Style>
                                             <Width>1pt</Width>
                                           </TopBorder>
                                           <PaddingLeft>2pt</PaddingLeft>
@@ -4882,6 +4901,7 @@
                                           <PaddingBottom>2pt</PaddingBottom>
                                         </Style>
                                       </Textbox>
+                                      <rd:Selected>true</rd:Selected>
                                     </CellContents>
                                   </TablixCell>
                                   <TablixCell>
@@ -5113,7 +5133,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>COMMENTS</Value>
+                                                <Value />
                                                 <Style>
                                                   <FontWeight>Bold</FontWeight>
                                                 </Style>
@@ -5318,6 +5338,148 @@
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
+                        <Textbox Name="Textbox65">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Audition Track</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Top>1.1191in</Top>
+                          <Left>0.15896in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.27083in</Width>
+                          <ZIndex>25</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Instrument3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Audition_Track.Value</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>1.1191in</Top>
+                          <Left>1.47146in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.01812in</Width>
+                          <ZIndex>26</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Textbox66">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Audition Type</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Top>0.8691in</Top>
+                          <Left>0.15896in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.27083in</Width>
+                          <ZIndex>27</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Instrument4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Audition_Type.Value</Value>
+                                  <Style>
+                                    <FontStyle>Italic</FontStyle>
+                                    <FontSize>12pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <Top>0.8691in</Top>
+                          <Left>1.47146in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.01812in</Width>
+                          <ZIndex>28</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
                       </ReportItems>
                       <KeepTogether>true</KeepTogether>
                       <Style>
@@ -5379,34 +5541,43 @@
         <TablixRowHierarchy>
           <TablixMembers>
             <TablixMember>
-              <Group Name="Teacher_Id">
+              <Group Name="Room">
                 <GroupExpressions>
-                  <GroupExpression>=Fields!Teacher_Id.Value</GroupExpression>
+                  <GroupExpression>=Fields!Room.Value</GroupExpression>
                 </GroupExpressions>
               </Group>
               <SortExpressions>
                 <SortExpression>
-                  <Value>=Fields!Teacher_Id.Value</Value>
+                  <Value>=Fields!Room.Value</Value>
+                </SortExpression>
+                <SortExpression>
+                  <Value>=Fields!AuditionStartTime.Value</Value>
+                </SortExpression>
+                <SortExpression>
+                  <Value>=Fields!Student_Last_Name.Value</Value>
+                </SortExpression>
+                <SortExpression>
+                  <Value>=Fields!Student_First_Name.Value</Value>
                 </SortExpression>
               </SortExpressions>
               <TablixHeader>
                 <Size>0.03125in</Size>
                 <CellContents>
-                  <Textbox Name="Teacher_Id">
+                  <Textbox Name="Room">
                     <CanGrow>true</CanGrow>
                     <KeepTogether>true</KeepTogether>
                     <Paragraphs>
                       <Paragraph>
                         <TextRuns>
                           <TextRun>
-                            <Value>=Fields!Teacher_Id.Value</Value>
+                            <Value>=Fields!Room.Value</Value>
                             <Style />
                           </TextRun>
                         </TextRuns>
                         <Style />
                       </Paragraph>
                     </Paragraphs>
-                    <rd:DefaultName>Teacher_Id</rd:DefaultName>
+                    <rd:DefaultName>Room</rd:DefaultName>
                     <Style>
                       <Border>
                         <Style>None</Style>
@@ -5421,34 +5592,28 @@
               </TablixHeader>
               <TablixMembers>
                 <TablixMember>
-                  <Group Name="Student_Name">
+                  <Group Name="AuditionId">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Student_Name.Value</GroupExpression>
+                      <GroupExpression>=Fields!Audition_Id.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
-                  <SortExpressions>
-                    <SortExpression>
-                      <Value>=Fields!Student_Name.Value</Value>
-                    </SortExpression>
-                  </SortExpressions>
                   <TablixHeader>
                     <Size>0.03125in</Size>
                     <CellContents>
-                      <Textbox Name="Student_Name">
+                      <Textbox Name="AuditionId">
                         <CanGrow>true</CanGrow>
                         <KeepTogether>true</KeepTogether>
                         <Paragraphs>
                           <Paragraph>
                             <TextRuns>
                               <TextRun>
-                                <Value>=Fields!Student_Name.Value</Value>
+                                <Value>=Fields!Audition_Id.Value</Value>
                                 <Style />
                               </TextRun>
                             </TextRuns>
                             <Style />
                           </Paragraph>
                         </Paragraphs>
-                        <rd:DefaultName>Student_Name</rd:DefaultName>
                         <Style>
                           <Border>
                             <Style>None</Style>
@@ -5544,6 +5709,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
         <Height>10.73334in</Height>
         <Width>7.83479in</Width>
         <Style>
@@ -5574,7 +5740,7 @@
       <Prompt>odd Even</Prompt>
     </ReportParameter>
   </ReportParameters>
-  <Width>7.84375in</Width>
+  <Width>7.83479in</Width>
   <Page>
     <PageHeight>27.94cm</PageHeight>
     <PageWidth>21.59cm</PageWidth>
@@ -5586,5 +5752,5 @@
   </Page>
   <rd:ReportID>37d85ff3-2fac-4345-b7ff-b6e9db9ed584</rd:ReportID>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://consulting/ReportServer_MSSQLSERVER</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://consulting/Reportserver_Express_2012</rd:ReportServerUrl>
 </Report>
