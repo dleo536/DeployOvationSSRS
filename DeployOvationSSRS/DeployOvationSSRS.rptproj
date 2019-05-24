@@ -414,6 +414,10 @@
       <FullPath>RegistrationReportTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Report2.rdl</Name>
+      <FullPath>Report2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>ShortRegistrationReport.rdl</Name>
       <FullPath>ShortRegistrationReport.rdl</FullPath>
     </ProjectItem>
@@ -790,12 +794,20 @@
       <FullPath>Theory_C_ICTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Theory_C_PE.rdl</Name>
+      <FullPath>Theory_C_PE.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>TheoryTestCheckIn.rdl</Name>
       <FullPath>TheoryTestCheckIn.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>TheoryTestCheckInTest.rdl</Name>
       <FullPath>TheoryTestCheckInTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Theory_C_AC.rdl</Name>
+      <FullPath>Theory_C_AC.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
